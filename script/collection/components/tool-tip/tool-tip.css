@@ -1,0 +1,41 @@
+:host {
+    display: flex;
+}
+
+.tool-tip-content {
+    font: inherit;
+    position: absolute;
+    margin: -5px 0 0 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    width: 5rem;
+}
+
+.tool-tip-content::before {
+    content: "";
+    position: absolute;
+    top: 24%;
+    left: 0%;
+    margin-left: -15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    transform: rotate(90deg);
+}
+
+section p {
+    display: inline;
+    padding: 0 5px;
+}
+
+.tool-tip-icon {
+    width: auto;
+    height: auto;
+    border-radius: 15%;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,63 @@
+:host {
+    font-style: Arial, sans-serif;
+    background-color: var(--color-primary, lightslategray);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 1rem 0;
+    padding: 1rem;
+    display: block;
+    width: 30rem;
+    max-width: 80%;
+}
+
+form input {
+    color: lightcoral;
+}
+
+form input:focus,
+form button:focus {
+    outline: none;
+}
+
+form button {
+    color: green;
+    cursor: pointer;
+}
+
+form button:hover,
+form button:active {
+    background-color: yellow;
+}
+
+form input,
+form button {
+    font: inherit;
+    background-color: lemonchiffon;
+    padding: 0.2rem;
+    margin: 0 .2rem;
+}
+
+form button:disabled {
+    background-color: gray;
+    color: royalblue;
+    cursor: not-allowed;
+    border-color: lightgrey;
+}
+
+ul {
+    margin: 0 .2rem;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+}
+
+li:hover,
+li:active {
+    background-color: lightcoral;
+    color: var(--color-primary-inverted, whitesmoke);
+}

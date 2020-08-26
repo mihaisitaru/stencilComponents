@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/msstencilcomponents/msstencilcomponents.js"></script>
+</head>
+
+<body>
+    <button id="button-open-drawer">Open Drawer</button>
+    <sm-side-drawer drawer-title="The Side Drawer">
+        <nav class="side-nav">
+            <ul>
+                <li><a href="/">First link</a></li>
+                <li><a href="/">Second link</a></li>
+                <li><a href="/">Third link</a></li>
+            </ul>
+        </nav>
+    </sm-side-drawer>
+
+    <sm-tool-tip tool-tip-text="New Tooltip in town!" tool-tip-info="Check this out?!"></sm-tool-tip>
+    <sm-stock-price stock-symbol="IBM"></sm-stock-price>
+    <sm-stock-finder></sm-stock-finder>
+    <script>
+        const buttonShowDrawer = document.querySelector('#button-open-drawer'),
+            smSideDrawer = document.querySelector('sm-side-drawer');
+        buttonShowDrawer.addEventListener('click', _toggleDrawer);
+
+        function _toggleDrawer() {
+            if (!smSideDrawer.opened) {
+                smSideDrawer.open();
+            }
+        }
+    </script>
+</body>
+
+</html>
